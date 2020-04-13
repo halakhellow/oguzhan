@@ -6,6 +6,9 @@
 html {
     font-family:"Autour One";
 }
+.content {
+    min-height:calc(100vh - 82px);
+}
 header {
     margin-bottom: 27px;
     text-align: center;
@@ -26,17 +29,23 @@ header h1 {
     box-shadow: 5px 0 5px lightblue,-5px 0 5px lightblue,0 5px 5px lightblue,0 -5px 5px lightblue;
 }
 .menu ul li a:link {
-    padding: 4px;
     text-decoration: none;
     color: white;
     text-shadow: 1px 0 black, 0 1px black, -1px 0 black, 0 -1px black;
 }
 .menu ul li a:visited {
-    color:#4de4e3;
+    color:#03ffff;
     text-shadow: none;
 }
 .menu ul li a:hover {
     text-shadow: 0 0 ;
+}
+.menu ul li .wide {
+    display: block;
+}
+.menu ul li i {
+    color: white;
+    margin-right: 7px;
 }
 .bio,.aside h2 {
     font-size: 27px;
@@ -58,6 +67,7 @@ footer {
     color: white;
     background-color: teal;
     margin-top: 27px;
+    height: 55px;
 }
 .menu ul li,.aside p {
     font-size: 20px;
